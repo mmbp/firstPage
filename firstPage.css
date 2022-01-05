@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rubik:ital,wght@1,700&display=swap');
+ div{
+     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.center, .left, .right, .searchInput, .card,.row,.footer{border: 1px solid black;}
+.center, .left, .right,.card{border-radius: 10px;}
+.body, .centerBody, .nav,.footer{display: flex;
+    flex-wrap: wrap;}
+h1{ font-family: 'Rubik', sans-serif;}
+.header{
+    padding-bottom: 80px;
+}
+.nav{
+  
+    background: #6d0101;
+  
+    line-height: 80px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    padding:0 20px;
+}
+
+.navLink{
+flex: 5%;
+text-align: center;
+}
+.navSpace{
+flex: 75%;
+}
+.navSearch{
+    flex: 10%;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.searchInput{
+border-radius: 4px;
+line-height: 24px;
+width:100%;
+padding-left: 22px;
+ box-sizing: border-box;
+} 
+ .search{
+    position:relative;
+}
+
+.search::before{
+    content: " ";
+    background-image: url(https://media.istockphoto.com/vectors/thin-line-vector-icon-vector-id868630240?s=170x170);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20px;
+position: absolute;
+left: 2px;
+}  
+
+ 
+.body{
+    gap: 2%;
+    padding: 0 40px 40px;
+}
+.left ,.right{
+    flex: 18%;
+}
+
+.center{
+    flex:60%;
+    background-image: url("img/download\ \(1\).jfif") ;
+       background-size: cover;
+       background-position: center center;
+
+}
+.centerHead{
+   padding: 20px 0 80px;
+    text-align: center;
+}
+.centerBody{
+    gap: 5%;
+    padding:0 100px   ;
+}
+
+.card{
+    flex: 15%;
+padding: 20px;
+background: white;
+text-align: center;
+}
+.cardBody{
+    text-align: center;
+
+}
+.circle{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: gray;
+    margin: 0 auto; 
+    background-image: url("img/download\ \(1\).jfif") ;
+    background-size: cover;
+    background-position: center;
+}
+.cardHead{
+    padding-bottom: 60px;
+}
+.centerFooter{
+    padding:100px 100px;
+}
+.footer{
+padding: 0 40px;
+background: white;
+border-radius: 6px;
+}
+.textcol{
+    flex: 15%;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+
+.nav1200{display: none; }
+.hide{display: none !important;}
+/* up to 1200px screen width */
+
+
+@media  only screen and (max-width: 1200px) {
+    .left{display: none;}
+    .right{display: none;}
+    .nav1200{
+        position: relative;
+        display: block;
+        height: 100px;
+        background: #6d0101;
+        padding-top: 20px;
+        padding-left: 20px;
+        line-height: 60px;
+    }
+    .nav{display: none;}
+    .navSearch{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+    }
+    .search::before{
+        width: 40px;
+    }
+    .searchInput{
+        line-height: 60px;
+        width: 350px;
+        font-size: 1.8rem;
+        padding-left: 50px;
+    }
+    .btnimg{width: 60px; height: 60px;
+    }
+    .dropMenu{
+        position: relative;
+        border: 1px solid #6d0101;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+      max-width: 25%;
+      gap: 20px;
+      padding: 20px;
+      top: 20px;
+     
+    }
+    .navLink{text-align: unset;}
+    .link{
+        color: #6d0101;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
