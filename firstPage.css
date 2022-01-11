@@ -177,8 +177,13 @@ border-radius: 6px;
     .link{
         color: #6d0101;
     }
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
+     .footer{
+        padding: 0 0;
     }
+    .textcol{
+        flex: 100%;
+    }
+   .card{
+    margin: 20px auto;
+   }
 }
