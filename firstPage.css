@@ -11,9 +11,12 @@ body{
 .center, .left, .right,.card{border-radius: 10px;}
 .body, .centerBody, .nav,.footer{display: flex;
     flex-wrap: wrap;}
-h1{ font-family: 'Rubik', sans-serif;
- color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    marquee{ 
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
 .header{
     padding-bottom: 80px;
 }
@@ -85,6 +88,7 @@ left: 2px;
 .center{
     flex:60%;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vOHaJMnWGfDKzVabH3lIxQHaLa%26pid%3DApi&f=1) ;
+   
        background-size: cover;
        background-position: center center;
 
@@ -98,20 +102,40 @@ left: 2px;
     padding:0 100px   ;
 }
 
-.card{
-    flex: 15%;
-padding: 20px;
-background: white;
-text-align: center;
+.card {
+	flex: 15%;
+	padding: 20px;
+	border-radius: 6px;
+	background-color: white;
+	transition-property: all;
+  	transition-duration: .1s;
+  	transition-timing-function: linear;
+      text-align: center;
 }
-.card:hover{
-    transform: scale(1.05,1.1);
-    box-shadow: 2px 2px 3px grey;
+.card:hover {
+	transform: scale(1.05,1.1);
+	box-shadow: 2px 2px 10px rgba(0,0,0,.6);
 }
-.card:hover span {
+
+.card:hover .circle {
 	display:  block;
+	transform: scale(1.2,1.2);
+	box-shadow: 1px 1px 8px rgb(0 0 0 / 60%);
+}
+.card span {
+	display:  block;
+	transition-property: all;
+  	transition-duration: .4s;
+  	transition-timing-function: linear;
+}
+
+.card:hover span {
+	color:  white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 	transform: scale(2,2);
 }
+
+
 .cardBody{
     text-align: center;
 
@@ -125,6 +149,12 @@ text-align: center;
     background-image: url(https://motionarray.imgix.net/preview-308262-rf50066lj4-high_0013.jpg) ;
     background-size: cover;
     background-position: center;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+    transition-property: all;
+  	transition-duration: .4s;
+  	transition-timing-function: linear;
+
+
 }
 .cardHead{
     padding-bottom: 60px;
